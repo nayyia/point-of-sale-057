@@ -150,6 +150,11 @@ export default function App() {
     setEditingId(product.id);
     setName(product.name);
     setDescription(product.description || "");
+    setPrice(product.price || "");
+    setCategory(product.category || "");
+    setReleaseDate(product.releaseDate || "");
+    setStock(product.stock || 0);
+    setIsActive(!!product.isActive || false);
     setErrors({});
   };
 
